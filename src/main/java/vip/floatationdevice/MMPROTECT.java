@@ -47,8 +47,8 @@ public class MMPROTECT {
     @Listener
     public void onDamageEntityEvent(DamageEntityEvent evt, @First Entity entity, @Root DamageSource source) {
         if (!source.getType().equals(DamageTypes.CUSTOM) && !source.getType().equals(DamageTypes.EXPLOSIVE) && !source.getType().equals(DamageTypes.FALL) && !source.getType().equals(DamageTypes.VOID) && evt.getBaseDamage() > 40) {
-            evt.setBaseDamage(37);
-            //System.out.println("Detected base damage >40 caused by " + entity.getType().getName() + ". Setting to 40");
+            evt.setBaseDamage(35);
+            //System.out.println("Detected base damage >40 caused by " + entity.getType().getName() + ". Setting to 35");
         }
     }
 
